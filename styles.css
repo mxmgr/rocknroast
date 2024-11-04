@@ -62,10 +62,10 @@ nav {
 }
 
 .logo {
-    height: 100%;
+    height:250%;
     width: auto;
     object-fit: contain;
-    max-width: 180px;
+    max-width: 380px;
 }
 
 nav ul {
@@ -145,7 +145,7 @@ nav a:hover {
 }
 
 .logo-large {
-    height: 120px;
+    height: 620px;
     width: auto;
     object-fit: contain;
 }
@@ -542,7 +542,7 @@ h1 {
     }
     
     .logo {
-        max-width: 140px;
+        max-width: 340px;
     }
     
     nav {
