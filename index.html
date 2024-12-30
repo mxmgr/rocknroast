@@ -37,7 +37,7 @@
                     
                     <div class="coffee-order-grid">
                         <div class="coffee-order-item">
-                            <label for="minerai">Le Minerai</label>
+                            <label for="minerai">Kenyapiscau </label>
                             <div class="quantity-input">
                                 <button type="button" class="quantity-btn minus">-</button>
                                 <input type="number" id="minerai" name="minerai" value="0" min="0">
@@ -57,9 +57,9 @@
                         <div class="coffee-order-item">
                             <label for="aurore">L'Aurore Boréale</label>
                             <div class="quantity-input">
-                                <button type="button" class="quantity-btn minus">-</button>
-                                <input type="number" id="aurore" name="aurore" value="0" min="0">
-                                <button type="button" class="quantity-btn plus">+</button>
+                                <button type="button" class="quantity-btn minus" disabled>-</button>
+                                <input type="number" id="aurore" name="aurore" value="0" min="0" disabled>
+                                <button type="button" class="quantity-btn plus" disabled>+</button>
                             </div>
                         </div>
 
@@ -84,9 +84,9 @@
                         <div class="coffee-order-item">
                             <label for="routine">La Routine des Millionnaires</label>
                             <div class="quantity-input">
-                                <button type="button" class="quantity-btn minus">-</button>
-                                <input type="number" id="routine" name="routine" value="0" min="0">
-                                <button type="button" class="quantity-btn plus">+</button>
+                                <button type="button" class="quantity-btn minus" disabled>-</button>
+                                <input type="number" id="routine" name="routine" value="0" min="0" disabled>
+                                <button type="button" class="quantity-btn plus" disabled>+</button>
                             </div>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
         <div class="coffee-grid">
             <div class="coffee-card">
                 <span class="coffee-origin">Kenya</span>
-                <h3>Le Minerai</h3>
+                <h3>Kenyapiscau</h3>
                 <p>Notre mélange phare, aussi robuste que le fer de Fermont. Notes de chocolat noir, de noisettes grillées et de caramel.</p>
                 <span class="coffee-price">20$/400g</span>
             </div>
@@ -161,7 +161,8 @@
                 <p>Un café corsé aux notes profondes de fruits noirs et d'épices, parfait pour démarrer votre quart de travail.</p>
                 <span class="coffee-price">20$/400g</span>
             </div>
-            <div class="coffee-card">
+            <div class="coffee-card  sold-out">
+                <div class="sold-out-overlay">Épuisé :(</div>
                 <span class="coffee-origin">Torréfaction Légère</span>
                 <h3>L'Aurore Boréale</h3>
                 <p>Un café délicat aux notes florales et d'agrumes, aussi brillant que nos ciels du Nord.</p>
@@ -176,10 +177,11 @@
             <div class="coffee-card">
                 <span class="coffee-origin">Colombien Supremo</span>
                 <h3>Première Neige</h3>
-                <p>Aussi pur que les premiers flocons de l'hiver sur une table à pique-nique de Medellin. Un café équilibré aux notes de caramel et de fruits à noyau.</p>
+                <p>Aussi pur que les premiers flocons de l'hiver sur les fosses du Lac Bloom. Un café équilibré aux notes de caramel et de fruits à noyau.</p>
                 <span class="coffee-price">20$/400g</span>
             </div>
-            <div class="coffee-card">
+            <div class="coffee-card sold-out">
+                <div class="sold-out-overlay">Épuisé :(</div>
                 <span class="coffee-origin">Éthiopien Refisa</span>
                 <h3>La Routine des Millionnaires</h3>
                 <p>Un café naturel éthiopien aux notes exotiques de fruits des bois et de billets de 100$. Une expérience unique pour les gens avec de l'ambition.</p>
@@ -188,7 +190,7 @@
         </div>
         <div style="text-align: center;">
             <button class="order-button" id="openOrderForm">
-                Passer une commande
+                Passez votre une commande
                 <span class="order-note">Aucun minimum!</span>
             </button>
         </div>
