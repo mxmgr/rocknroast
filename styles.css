@@ -562,3 +562,43 @@ h1 {
         font-size: 1.25rem;
     }
 }
+
+.coffee-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.sold-out-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    background-color: var(--primary);
+    color: var(--cream);
+    padding: 0.5rem 2rem;
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: 3px solid var(--cream);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 140%;
+    text-align: center;
+    opacity: 0.95;
+}
+
+.coffee-card.sold-out {
+    opacity: 0.8;
+}
+
+.coffee-card.sold-out::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(245, 230, 211, 0.2);
+    z-index: 1;
+}
